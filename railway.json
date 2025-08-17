@@ -1,0 +1,7 @@
+{
+  "name": "sales-leaderboard-pro",
+  "services": [
+    { "name": "backend", "rootDirectory": "backend", "startCommand": "uvicorn src.main:app --host 0.0.0.0 --port ${PORT:-8000}" },
+    { "name": "frontend", "rootDirectory": "frontend", "startCommand": "next start -p ${PORT:-3000}" }
+  ]
+}
